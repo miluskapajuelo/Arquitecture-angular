@@ -1,0 +1,5 @@
+<ol>
+  <li *ngFor="let task of tasks$ |async"  (click)="onMark(task)">
+    <span [ngClass]="{'done': task.done}">{{task.description}}</span>
+  </li>
+</ol>
